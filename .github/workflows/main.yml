@@ -1,8 +1,15 @@
-name: hello-world
-on: push
+name: Node CI/CD Pipeline
+
+on:
+  push:
+    branches: [ "main" ]
+
 jobs:
-  my-job:
+  test-build:
     runs-on: ubuntu-latest
+
     steps:
-      - name: my-step
-        run: echo "Hello World!"
+    - name: Run Dummy Test
+      run: |
+        echo "Running automated build test..."
+        exit 1
