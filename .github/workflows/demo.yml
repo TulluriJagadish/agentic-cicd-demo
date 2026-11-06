@@ -1,0 +1,14 @@
+name: Automated AI Pipeline
+
+on:
+  push:
+    branches: [ "main" ]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+    - name: Run Build Test
+      run: |
+        echo "Starting build verification..."
+        exit 1
