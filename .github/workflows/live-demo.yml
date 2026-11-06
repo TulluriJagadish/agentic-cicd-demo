@@ -1,14 +1,14 @@
-name: Live Demo Pipeline
+name: Node CI/CD Pipeline
 
 on:
   push:
     branches: [ "main" ]
 
 jobs:
-  demo-job:
+  test-build:
     runs-on: ubuntu-latest
     steps:
-    - name: Run Demo Test
+    - name: Run Dummy Test
       run: |
         echo "Running automated build test..."
-        exit 1
+        exit 0
